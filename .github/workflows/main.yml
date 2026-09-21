@@ -2,9 +2,22 @@ name: Run Holder Change Scraper
 
 on:
   schedule:
-    # 04:00 น. เวลาไทย คือ 21:00 น. ของวันเดียวกันในเวลา UTC (ทุกวัน)
+    # 16:00 น. เวลาไทย
+    - cron: '0 9 * * *'
+
+    # 16:30 น. เวลาไทย
+    - cron: '30 9 * * *'
+
+    # 17:00 น. เวลาไทย
+    - cron: '0 10 * * *'
+
+    # 17:30 น. เวลาไทย
+    - cron: '30 10 * * *'
+
+    # 04:00 น. เวลาไทยของวันถัดไป
     - cron: '0 21 * * *'
-  workflow_dispatch: 
+
+  workflow_dispatch:
 
 jobs:
   scrape_data:
