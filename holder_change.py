@@ -13,7 +13,7 @@ from urllib3.util.retry import Retry
 # ใช้ relative path เพื่อให้ทำงานได้ทั้ง Local และ GitHub Actions
 TARGET_FOLDER = "./data_holder_change/"
 OUTPUT_FILE = "holder_change.csv"
-LOOKBACK_DAYS = 1000
+LOOKBACK_DAYS = 2000
 
 
 def create_session():
