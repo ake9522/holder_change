@@ -33,9 +33,9 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install pandas requests beautifulsoup4 lxml html5lib
+          pip install pandas requests beautifulsoup4 lxml html5lib pdfplumber selenium webdriver-manager
 
-      - name: Run Script
+      - name: Run Holder Change Scraper
         run: python holder_change.py
 
       - name: Save Data to Main Branch
