@@ -33,7 +33,7 @@ os.environ["WDM_SSL_VERIFY"] = "0"
 TARGET_FOLDER = "./data_holder_change/"
 OUTPUT_FILE = "holder_change.csv"
 LOOKBACK_DAYS = 2000
-RESET_OUTPUT_FILES = True
+RESET_OUTPUT_FILES = False
 
 
 def create_session():
